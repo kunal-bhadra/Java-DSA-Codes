@@ -1,0 +1,18 @@
+package _5_conditionals_loops;
+
+import java.util.Scanner;
+//to check if first character entered is upper or lower case
+public class case_check {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter any string");
+        char ch = in.next().trim().charAt(0);
+
+        if (ch>='a' && ch<='z'){
+            System.out.println("Lowercase");
+        }
+        else{
+            System.out.println("Uppercase");
+        }
+    }
+}

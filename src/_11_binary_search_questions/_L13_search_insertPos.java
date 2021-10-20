@@ -1,0 +1,22 @@
+package _11_binary_search_questions;
+
+// https://leetcode.com/problems/search-insert-position/
+public class _L13_search_insertPos {
+    public int searchInsert(int[] nums, int target) {
+        int start = 0;
+        int end = nums.length - 1;
+
+        while(start <= end){
+            int mid = start + (end - start) / 2;
+
+            if(nums[mid] < target){
+                start = mid + 1;
+            } else if(nums[mid] > target){
+                end = mid - 1;
+            } else {
+                return mid;
+            }
+        }
+        return start;
+    }
+}
