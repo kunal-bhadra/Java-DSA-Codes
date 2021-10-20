@@ -1,6 +1,5 @@
 package _14_sorting_questions;
 
-// https://leetcode.com/problems/sort-array-by-parity/
 class _15_sortArr_parity {
     public int[] sortArrayByParity(int[] nums) {
         int start = 0;
